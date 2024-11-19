@@ -296,7 +296,7 @@ H.highlights = {
   Pmenu = { fg = "b5", bg = "b2" },
   PmenuSel = { fg = "a1", bg = "b3" },
   PmenuKind = "Pmenu",
-  PmenuKindSel = "PmenuKind",
+  PmenuKindSel = "PmenuSel",
   PmenuExtra = "Pmenu",
   PmenuExtraSel = "PmenuSel",
   PmenuSbar = { bg = "b3" },
@@ -368,11 +368,11 @@ H.highlights = {
   DiagnosticHint = "Hint",
   DiagnosticOk = "Ok",
 
-  DiagnosticUnderlineError = "DiagnosticError",
-  DiagnosticUnderlineWarn = "DiagnosticWarn",
-  DiagnosticUnderlineInfo = "DiagnosticInfo",
-  DiagnosticUnderlineHint = "DiagnosticHint",
-  DiagnosticUnderlineOk = "DiagnosticOk",
+  DiagnosticUnderlineError = { sp = "cr", undercurl = true },
+  DiagnosticUnderlineWarn = { sp = "co", undercurl = true },
+  DiagnosticUnderlineInfo = { sp = "cb", undercurl = true },
+  DiagnosticUnderlineHint = { sp = "cc", undercurl = true },
+  DiagnosticUnderlineOk = { sp = "cg", undercurl = true},
 
   -- telescope {{{2
   TelescopeNormal = { fg = "b5", bg = "b2" },
@@ -394,10 +394,10 @@ H.highlights = {
   ["@markup.raw"] = { fg = "b4" },
 
   -- contour {{{2
-  ContourError = { fg = "cr", bg = "b2" },
-  ContourWarn = { fg = "co", bg = "b2" },
-  ContourInfo = { fg = "cb", bg = "b2" },
-  ContourHint = { fg = "cc", bg = "b2" },
+  ContourDiagnosticError = { fg = "cr", bg = "b2" },
+  ContourDiagnosticWarn = { fg = "co", bg = "b2" },
+  ContourDiagnosticInfo = { fg = "cb", bg = "b2" },
+  ContourDiagnosticHint = { fg = "cc", bg = "b2" },
 }
 
 -- module {{{1
